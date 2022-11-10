@@ -37,7 +37,7 @@ def remove():
 window = Tk()
 window.title("Calculator")
 window.geometry("192x252")
-window.resizable(False, False)
+# window.resizable(False, False)
 window.configure(background="grey")
 
 result = StringVar()
@@ -93,8 +93,8 @@ equal.place(x = 86, y = 200)
 clear = Button(window, text='Clear', fg='black', bg='white', command=clear, height=2, width=4)
 clear.place(x = 10, y = 35)
 
-removelast = Button(window, text='CL', fg='black', bg='white', command=removelast, height=2, width=4)
-removelast.place(x = 48, y = 35)
+remove = Button(window, text='CL', fg='black', bg='white', command=remove, height=2, width=4)
+remove.place(x = 48, y = 35)
 
 decimal = Button(window, text='.', fg='black', bg='white', command=lambda: press('.'), height=2, width=4)
 decimal.place(x = 10, y = 200)
